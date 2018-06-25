@@ -1,13 +1,24 @@
+##################################################################
 #
-# This is the server logic of a Shiny web application. You can run the 
-# application by clicking 'Run App' above.
+# TITLE: Clinical Trial Recruitment Accelerator (CTRA)
 #
-# Find out more about building applications with Shiny here:
-# 
-#    http://shiny.rstudio.com/
+# DESCRIPTION: The server.R script
 #
+# AUTHOR: Curry W. Hilton
+#
+# LAST UPDATED: 6/25/2018 
+#
+##################################################################
+
+# required libraries and custom functions
 
 library(shiny)
+library(shinythemes)
+library(ggplot2)
+library(dplyr)
+library(plotly)
+
+##################################################################
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
